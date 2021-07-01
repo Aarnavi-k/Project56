@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Project 56, Blog with Photos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        Hello, Welcome to My Photography World!
+    </h1>
+    <h4 id="displayDateTime"></h4>
+    <span class="image-section">
+        <div class="section-style">
+            <img src="https://th.bing.com/th/id/OIP.jJW5T1VmvoxPtI6mYkGiFAHaE8?pid=ImgDet&rs=1">
+            <p>Try to be a rainbow in someone's cloud -Maya Angelou</p>
+        </div>
+        <div class="section-style">
+            <img src="https://th.bing.com/th/id/OIP.MITpGupL_zlu92PU8lACygHaE8?pid=ImgDet&rs=1">
+            <p>Be the change you wish to see in the world -Mahatma Gandhi</p>
+        </div>
+    </span>
+    <span class="image-section">
+        <div class="section-style">
+            <img src="https://th.bing.com/th/id/OIP.MkdOCEdP2nGLLcIMvvbNewHaEs?pid=ImgDet&rs=1">
+            <p>Imagination is more important than knowledge -Albert Einstien</p>
+        </div>
+        <div class="section-style">
+            <img src="https://th.bing.com/th/id/OIP.EQUNd15up39HcrPEuBYnpAHaE8?pid=ImgDet&rs=1">
+            <p>Life is either a daring adventure or nothing at all -Helen Keller</p>
+        </div>
+    </span>
+</body>
+    <script type="text/javascript">
+        var today = new Date();
+        var day = today.getDay();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date + ' ' + time;
+        document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
+
+    </script>
+</html>
